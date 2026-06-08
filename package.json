@@ -1,0 +1,25 @@
+{
+  "name": "postman-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env server/index.js",
+    "serverless": "node --env-file=.env server/app.js",
+    "dev": "node --watch --env-file=.env server/index.js"
+  },
+  "keywords": [],
+  "author": "Taraknath Karan",
+  "license": "MIT",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.5.2",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
