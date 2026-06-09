@@ -4,9 +4,9 @@ import { requestController } from "./controller.js";
 
 const app = express();
 
-app.use(express.json(), requestValidatorMiddleware);
+app.use(express.static("client"), express.json());
 
-app.post("/", requestController);
+app.post("/", requestValidatorMiddleware, requestController);
 
 app.use(errorHendleMiddleWare);
 
