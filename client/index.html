@@ -1,1 +1,91 @@
-working
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="author" content="Taraknath Karan">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Postman Clone - Tarak Program</title>
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/panel.css">
+   <link rel="stylesheet" href="css/textarea.css">
+</head>
+
+<body>
+
+   <div class="app-container">
+      <main class="main-content">
+
+         <section class="request-bar-container">
+            <form id="request-form" class="request-bar">
+               <select id="request-method" class="method-select">
+                  <option value="GET">GET</option>
+                  <option value="POST">POST</option>
+                  <option value="PUT">PUT</option>
+                  <option value="PATCH">PATCH</option>
+                  <option value="DELETE">DELETE</option>
+               </select>
+               <input type="url" id="request-url" class="url-input" value="https://jsonplaceholder.typicode.com/posts/1"
+                  placeholder="Enter request URL..." required>
+               <button type="submit" id="send-btn" class="send-btn">Send</button>
+            </form>
+         </section>
+
+         <section class="workspace-grid">
+
+            <div class="panel-box border-right">
+               <div class="sub-panel">
+                  <div class="panel-header">
+                     <h3>Request Headers (JSON)</h3>
+                  </div>
+                  <textarea id="request-headers" spellcheck="false">
+{
+  "User-Agent": "tarakpro-client/1.0.0",
+  "Accept": "*/*",
+  "Connection": "keep-alive",
+  "Content-Type": "application/json",
+}
+                  </textarea>
+               </div>
+
+               <div class="sub-panel">
+                  <div class="panel-header">
+                     <h3>Request Body </h3>
+                  </div>
+                  <textarea id="request-body" spellcheck="false"></textarea>
+               </div>
+            </div>
+
+            <div class="panel-box">
+               <div class="panel-header">
+                  <h3>Response</h3>
+                  <div class="response-meta" id="response-meta">
+                     <span id="status-badge" class="status-badge">Status: null</span>
+                  </div>
+               </div>
+
+               <div class="sub-panel">
+                  <div class="panel-header sub-title">
+                     <h4>Response Headers</h4>
+                  </div>
+                  <textarea disabled id="response-headers-output">// Response headers will appear here...</textarea>
+               </div>
+
+               <div class="sub-panel">
+                  <div class="panel-header sub-title">
+                     <h4>Response Body</h4>
+                  </div>
+                  <textarea disabled id="response-output">// Click Send to see response...</textarea>
+               </div>
+            </div>
+
+         </section>
+
+      </main>
+   </div>
+   <script src="js/var.js"></script>
+   <script src="js/binding.js"></script>
+   <script src="js/event.js"></script>
+</body>
+
+</html>

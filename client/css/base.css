@@ -1,0 +1,26 @@
+/* Reset and Base Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+   background-color: #1c1c1c;
+   color: #e0e0e0;
+   height: 100vh;
+   overflow: hidden;
+}
+
+.app-container {
+   display: flex;
+   height: 100vh;
+}
+
+.main-content {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   background-color: #1e1e1e;
+}

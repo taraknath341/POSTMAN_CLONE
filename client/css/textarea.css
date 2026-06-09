@@ -1,0 +1,63 @@
+/* Textareas (Input) & Output Boxes */
+textarea,
+.response-headers-box,
+.response-body-box {
+   width: 100%;
+   flex: 1;
+   background: #151515;
+   border: 1px solid #3c3c3c;
+   border-radius: 4px;
+   padding: 12px;
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 13px;
+   line-height: 1.5;
+   outline: none;
+   overflow: auto;
+}
+
+textarea {
+   color: #7ec699;
+   resize: none;
+}
+
+textarea:focus {
+   border-color: #555;
+}
+
+/* Special color for response codes */
+.response-headers-box {
+   color: #f8c555;
+}
+
+.response-body-box {
+   color: #e0e0e0;
+}
+
+pre {
+   margin: 0;
+   white-space: pre-wrap;
+}
+
+/* Response Metadata Styling */
+.response-meta {
+   display: flex;
+   gap: 10px;
+   font-size: 12px;
+   align-items: center;
+}
+
+.status-badge {
+   padding: 2px 8px;
+   border-radius: 3px;
+   font-weight: bold;
+}
+
+.status-success {
+   background-color: rgba(12, 187, 82, 0.2);
+   color: #0cbb52;
+}
+
+.status-error {
+   background-color: rgba(255, 77, 77, 0.2);
+   color: #ff4d4d;
+}
