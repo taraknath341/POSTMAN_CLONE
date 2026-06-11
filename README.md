@@ -1,7 +1,7 @@
 # HTTP Client
 
 ## 🎮 Preview
-<img src="./image/screenshot.png">
+<img src="https://taraknath341.codeberg.page/client_storage/Markdown/http-client/screenshot.png">
 
 ## 🛠️ Tech Stack
 
